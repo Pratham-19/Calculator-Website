@@ -1,0 +1,89 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.conatiner {
+    text-align: center;
+
+}
+
+.boundary {
+    border: solid black;
+    border-radius: 15px;
+    height: max-content;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px;
+    background-color: #575757;
+}
+
+.screen {
+    border: solid rgb(8, 8, 8);
+    height: 50px;
+    width: 360px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: end;
+    border-radius: 15px;
+    background-color: #bcd1c0;
+    padding: 15px;
+}
+
+
+.calRow {
+    width: 390px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    height: 70px;
+    background-color: #575757;
+}
+
+.btn {
+    width: 70px;
+    display: inline-block;
+    height: auto;
+    background-color: rgb(222, 222, 222);
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+.btnSup {
+    background-color: rgb(222, 222, 222);
+}
+
+#btn-matrix {
+    background-color: #575757;
+    display: flex;
+    flex-direction: column;
+}
+
+#equals {
+    background-color: #f4a543;
+}
+
+#decimal,
+#comma {
+    font-size: 38px;
+}
+
+#fullClear,
+#clearOne {
+    background-color: rgb(247, 105, 105);
+}
+
+.conatiner h1 {
+    font-size: 48px;
+    color: #ff003c;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 12px;
+}
