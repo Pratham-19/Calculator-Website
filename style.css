@@ -83,7 +83,7 @@ body {
 .conatiner h1 {
     font-size: 48px;
     color: #ff003c;
-    text-decoration: underline;
+    /*text-decoration: underline;
     text-decoration-style: wavy;
-    text-underline-offset: 12px;
+    text-underline-offset: 12px; */
 }
