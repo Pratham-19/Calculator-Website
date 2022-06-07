@@ -11,7 +11,18 @@ function fact(n) {
 Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (item) => {
         if (item.target.innerHTML == '=') {
-            str = String(eval(str));
+            try {
+                let ans = eval(str);
+                str = String(ans);
+            } catch (err) {
+                if (err.message == "missing ) after argument list") {
+                    str += ')'
+                    str = String(eval(str));
+                } else {
+                    str = "Syntax Error"
+                }
+                // window.alert(err.message);
+            }
             document.querySelector('input').value = str;
         } else if (item.target.innerHTML == 'CE') {
             str = ""
