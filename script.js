@@ -44,9 +44,21 @@ Array.from(buttons).forEach((button) => {
             str += Math.PI;
             document.querySelector('input').value = str;
         } else if (item.target.innerHTML == '+/-') {
-            str = String(eval(str));
-            str += "*-1";
-            str = String(eval(str));
+            try {
+                let ans = eval(str);
+                str = String(ans);
+            } catch (err) {
+                if (err.message == "missing ) after argument list") {
+                    str += ')'
+                    str = String(eval(str));
+                    str += "*-1";
+                    str = String(eval(str));
+                } else {
+                    str = "Syntax Error"
+                }
+            }
+            // str += "*-1";
+            // str = String(eval(str));
             document.querySelector('input').value = str;
         } else if (item.target.innerHTML == 'x10<sup class="btnSup">x</sup>' || item.target.innerHTML == 'x') {
             if (str == "") {
