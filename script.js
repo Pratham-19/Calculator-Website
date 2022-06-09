@@ -44,6 +44,7 @@ Array.from(buttons).forEach((button) => {
             str += Math.PI;
             document.querySelector('input').value = str;
         } else if (item.target.innerHTML == '+/-') {
+            str = String(eval(str));
             str += "*-1";
             str = String(eval(str));
             document.querySelector('input').value = str;
@@ -51,7 +52,7 @@ Array.from(buttons).forEach((button) => {
             if (str == "") {
                 window.alert("Enter a value first !")
             } else {
-                str += "Math.pow(10,"
+                str += "* Math.pow(10,"
                 document.querySelector('input').value = str;
             }
 
